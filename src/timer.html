@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="time.css">
+<script src = "timerJS.js"> </script>
+<script src = "quote.js"> </script>
+<body style = "Playfair+Display">
+<!-- <h1>Pomodoro</h1> -->
+<h2 id = "quote" class = "quotes"></h2>
+<ul class = "lol">
+    <span onclick = "functDefaultPom()" id = "ptimer" class = "button">POMODORO TIMER</span>
+    <span onclick = "functDefaultShort()" id = "stimer" class = "button1">SHORT BREAK</span>
+    <span onclick = "functDefaultLong()" id = "ltimer" class = "button2">LONG BREAK</span>
+</ul>
+<p class = "timer">
+  <span id = "hour"></span>
+  <span id = "colon">:</span>
+  <span id = "min"></span>
+  <script>functDefaultPom()</script>
+</p>
+<p class = "icons">
+  <span class = "play">
+    <span class="glyphicon glyphicon-play" onclick = "funcStart()"></span>
+  </span>
+  <span class = "play">
+    <span class="glyphicon glyphicon-pause" onclick = "funcPause()"></span>
+  </span>
+  <span class = "play">
+    <span class="glyphicon glyphicon-repeat" onclick = "funcReset()"></span>
+  </span>
+</p>
+</body>
+<body>
+  <div class = "title">
+    <h1>Tasks</h1>
+  </div>
+  <div class = "addTodo">
+    <input type = "text" class = "input" id = "input" placeholder = "Add">
+  </div>
+  <div class = "output">
+    <ul id = "list">
+    </ul>
+  </div>
+  <script src = "todo.js"></script>
+</body>
+</html>
